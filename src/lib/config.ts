@@ -1,0 +1,30 @@
+export const siteConfig = {
+  name: 'Vivek Jindal',
+  title: 'M.Tech Scholar | Deep Learning & Computer Vision Researcher',
+  description:
+    'M.Tech in Computer Science & Engineering (Cloud Computing) from Medicaps University. Specialized in deep learning, computer vision, and neural networks with 3 conference publications.',
+  url: 'https://vivekjindal.dev',
+  ogImage: '/og-image.jpg',
+  links: {
+    email: 'vivek.jindal.sbg@gmail.com',
+    github: 'https://github.com/vivekjindal',
+    linkedin: 'https://www.linkedin.com/in/24vivek-jindal',
+    whatsapp: '+919755872328',
+  },
+  keywords: [
+    'Vivek Jindal',
+    'Deep Learning',
+    'Computer Vision',
+    'Machine Learning',
+    'CNN',
+    'Neural Networks',
+    'M.Tech',
+    'Medicaps University',
+    'Research',
+    'Cricket Scorecard Automation',
+    'Plant Disease Detection',
+    'Oracle APEX',
+    'Oracle APEX Cloud Developer',
+    'Oracle Certification',
+  ],
+};
