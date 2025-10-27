@@ -3,6 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import { Download, Mail, Github, Linkedin, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { TypeAnimation } from 'react-type-animation';
 
 const Home = () => {
   const [ref, inView] = useInView({
@@ -96,8 +97,15 @@ const Home = () => {
             <motion.p
               variants={itemVariants}
               className="mb-8 text-lg text-muted-foreground sm:text-2xl"
+              aria-live="polite"
             >
-              AI/ML Researcher • Computer Vision • Model Builder
+              <TypeAnimation
+                sequence={['AI/ML Researcher • Computer Vision • Model Builder', 1200]}
+                speed={50}
+                cursor={true}
+                repeat={0}
+                wrapper="span"
+              />
             </motion.p>
 
             <motion.p
