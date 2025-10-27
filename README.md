@@ -59,18 +59,21 @@ src/
 ## 🛠️ Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/vivekjindal/portfolio.git
    cd portfolio
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Set up environment variables**
    Create a `.env` file in the root directory:
+
    ```env
    VITE_EMAILJS_SERVICE_ID=your_service_id
    VITE_EMAILJS_TEMPLATE_ID=your_template_id
@@ -78,6 +81,7 @@ src/
    ```
 
 4. **Run development server**
+
    ```bash
    npm run dev
    ```
@@ -96,39 +100,27 @@ src/
 - `npm test` - Run tests
 - `npm run type-check` - Check TypeScript types
 
-## 🚀 Deployment
+## 🚀 Deployment (Azure Static Web Apps)
 
-### Vercel (Recommended)
+This repo is configured for Azure Static Web Apps (SWA). Push to `main` triggers a GitHub Action that builds and deploys `dist` automatically.
 
-1. **Install Vercel CLI**
-   ```bash
-   npm i -g vercel
-   ```
+### One-time setup
 
-2. **Deploy**
-   ```bash
-   vercel
-   ```
+1. Create a Static Web App (Free plan) in the Azure Portal and connect this GitHub repo.
+2. Use these values when prompted:
+   - App location: `/`
+   - Output location: `dist`
+3. In your GitHub repo, add the secret `AZURE_STATIC_WEB_APPS_API_TOKEN` (from the SWA resource Deployments page).
+4. Optional build-time env vars (in Azure SWA portal → Build & deployment → Environment variables):
+   - `VITE_CONTACT_ENDPOINT_URL`, and optional `VITE_EMAILJS_*` keys.
 
-### Netlify
-
-1. **Install Netlify CLI**
-   ```bash
-   npm i -g netlify-cli
-   ```
-
-2. **Deploy**
-   ```bash
-   netlify deploy --prod
-   ```
-
-### Manual Build
+### Local build
 
 ```bash
 npm run build
 ```
 
-The build files will be in the `dist` folder.
+Artifacts will be generated in the `dist` folder.
 
 ## 🔧 Configuration
 
@@ -175,6 +167,7 @@ MIT License - feel free to use this project for your own portfolio!
 ## 👤 Author
 
 **Vivek Jindal**
+
 - GitHub: [@vivekjindal](https://github.com/vivekjindal)
 - LinkedIn: [/in/vivekjindal](https://linkedin.com/in/vivekjindal)
 - Email: vivek@example.com
