@@ -18,7 +18,8 @@ const publications = [
   },
   {
     title: 'Automated Disease Detection in Banana Using Convolutional Neural Networks (CNNs)',
-    authors: 'Yash Kumavat, Priyanka Dhasal, Divya Kumawat, Yash Agrawal, Yash Mewada, Vivek Jindal',
+    authors:
+      'Yash Kumavat, Priyanka Dhasal, Divya Kumawat, Yash Agrawal, Yash Mewada, Vivek Jindal',
     journal: 'Parul University International Conference on Engineering and Technology (PiCET 2025)',
     year: 2025,
     type: 'publication',
@@ -29,9 +30,11 @@ const publications = [
     link: null,
   },
   {
-    title: 'ResNet-152 for Early Skin Cancer Detection: A Deep Learning Approach to Medical Imaging',
+    title:
+      'ResNet-152 for Early Skin Cancer Detection: A Deep Learning Approach to Medical Imaging',
     authors: 'Pankaj Piplode, Kailash Kumar Baraskar, Pinky Rane, Vivek Jindal',
-    journal: 'Hinweis Third International Conference on Advances in Information, Telecommunication and Computing',
+    journal:
+      'Hinweis Third International Conference on Advances in Information, Telecommunication and Computing',
     year: 2025,
     type: 'publication',
     scopus: true,
@@ -93,9 +96,7 @@ const Publications = () => {
                             {pub.journal} • {pub.year}
                           </div>
                           {pub.doi && (
-                            <div className="mt-1 text-xs text-muted-foreground">
-                              {pub.doi}
-                            </div>
+                            <div className="mt-1 text-xs text-muted-foreground">{pub.doi}</div>
                           )}
                         </CardDescription>
                       </div>
