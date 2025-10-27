@@ -117,9 +117,9 @@ const Projects = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
                 </div>
                 <CardHeader>
-                  <div className="mb-2 flex items-start justify-between">
+                  <div className="mb-2 flex items-start justify-between gap-2">
                     <CardTitle className="text-lg md:text-xl">{project.title}</CardTitle>
-                    <span className="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold leading-none text-primary">
+                    <span className="inline-flex shrink-0 items-center justify-center whitespace-nowrap rounded-full bg-blue-500/10 px-3 py-1 text-sm font-semibold leading-none text-blue-600 dark:text-blue-400">
                       {project.category}
                     </span>
                   </div>

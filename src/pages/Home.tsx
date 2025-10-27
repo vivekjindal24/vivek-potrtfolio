@@ -68,7 +68,7 @@ const Home = () => {
           }}
         />
 
-        <div className="container mx-auto px-4" ref={ref}>
+        <div className="container mx-auto px-4 pb-20 sm:pb-0" ref={ref}>
           <motion.div
             className="mx-auto max-w-4xl text-center"
             variants={containerVariants}
@@ -159,7 +159,7 @@ const Home = () => {
 
           {/* Scroll Indicator */}
           <motion.div
-            className="absolute bottom-8 left-1/2 -translate-x-1/2"
+            className="pointer-events-none absolute bottom-4 left-1/2 z-0 -translate-x-1/2 sm:bottom-8"
             animate={{
               y: [0, 10, 0],
             }}
