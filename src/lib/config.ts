@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: 'Vivek Jindal',
-  title: 'M.Tech Scholar | Deep Learning & Computer Vision Researcher',
+  title: 'M.Tech (2025) Graduate | Deep Learning & Computer Vision Researcher',
   description:
-    'M.Tech in Computer Science & Engineering (Cloud Computing) from Medicaps University. Specialized in deep learning, computer vision, and neural networks with 3 conference publications.',
+    'M.Tech (2025) in Computer Science & Engineering (Cloud Computing) from Medicaps University. Specialized in deep learning, computer vision, and neural networks with 3 conference publications.',
   url: 'https://vivekjindal.dev',
   ogImage: '/og-image.jpg',
   links: {

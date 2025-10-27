@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 // Basic routes render
 const routes = [
   { path: '/', mustContain: "Hi, I'm", selector: 'h1' },
-  { path: '/about', mustContain: 'M.Tech scholar', selector: 'body' },
+  { path: '/about', mustContain: 'About', selector: 'h1' },
   { path: '/experience', mustContain: 'Teaching Assistant', selector: 'body' },
   { path: '/projects', mustContain: 'Featured', selector: 'h1' },
   { path: '/publications', mustContain: 'Conference Publications', selector: 'h2' },

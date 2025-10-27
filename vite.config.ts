@@ -14,7 +14,7 @@ export default defineConfig({
         name: 'Vivek Jindal - Portfolio',
         short_name: 'Vivek Jindal',
         description:
-          'Personal portfolio of Vivek Jindal - M.Tech Scholar | Deep Learning & Computer Vision Researcher',
+          'Personal portfolio of Vivek Jindal - M.Tech (2025) Graduate | Deep Learning & Computer Vision Researcher',
         theme_color: '#0f172a',
         background_color: '#0f172a',
         display: 'standalone',

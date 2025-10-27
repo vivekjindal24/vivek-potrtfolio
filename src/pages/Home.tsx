@@ -97,16 +97,16 @@ const Home = () => {
               variants={itemVariants}
               className="mb-8 text-xl text-muted-foreground sm:text-2xl"
             >
-              M.Tech Scholar | Deep Learning & Computer Vision Researcher
+              M.Tech (2025) Graduate | Deep Learning & Computer Vision Researcher
             </motion.p>
 
             <motion.p
               variants={itemVariants}
               className="mx-auto mb-12 max-w-2xl text-lg text-muted-foreground"
             >
-              Pursuing M.Tech in Computer Science & Engineering (Cloud Computing) from Medicaps
-              University. Specialized in CNNs, Deep Learning, and Computer Vision with 3 conference
-              publications.
+              Completed M.Tech in Computer Science & Engineering (Cloud Computing) at Medicaps
+              University in June 2025. Specialized in CNNs, Deep Learning, and Computer Vision with
+              3 conference publications.
             </motion.p>
 
             <motion.div

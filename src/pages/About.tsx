@@ -49,8 +49,8 @@ const About = () => {
                 <h2 className="mb-6 text-3xl font-bold">My Journey</h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    I'm a dedicated AI/ML researcher and M.Tech scholar in Computer Science &
-                    Engineering, specializing in Cloud Computing from Medicaps University with a
+                    I'm a dedicated AI/ML researcher and M.Tech (2025) graduate in Computer Science
+                    & Engineering, specialized in Cloud Computing from Medicaps University with a
                     CGPA of 8.71/10.
                   </p>
                   <p>

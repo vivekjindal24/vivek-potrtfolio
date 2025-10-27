@@ -24,10 +24,11 @@ const publications = [
     year: 2025,
     type: 'publication',
     scopus: true,
-    doi: 'IET Conference Proceedings (ISSN: 2732-4494)',
+    doi: 'https://doi.org/10.1049/icp.2025.1669',
+
     abstract:
       'Developed a CNN-based image classification model to identify banana leaf diseases including Bacterial Wilt, Fusarium Wilt, and Black Sigatoka. Outperformed VGG-16, ResNet-50, EfficientNet achieving 96.1% accuracy.',
-    link: null,
+    link: 'https://doi.org/10.1049/icp.2025.1669',
   },
   {
     title:
@@ -41,7 +42,7 @@ const publications = [
     doi: null,
     abstract:
       'A deep learning approach using ResNet-152 architecture for early detection of skin cancer through medical imaging analysis, enabling timely intervention and improved patient outcomes.',
-    link: null,
+    link: 'https://thegrenze.com/index.php?display=page&view=journalabstract&absid=5759&id=8',
   },
 ];
 

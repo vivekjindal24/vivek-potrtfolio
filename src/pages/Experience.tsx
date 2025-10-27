@@ -9,13 +9,13 @@ const experiences = [
     location: 'Indore, India',
     period: 'August 2022 - Present',
     description:
-      'Supporting the Computer Science & Engineering department while pursuing M.Tech. Assisting in coursework, research activities, and student mentorship.',
+      'Supporting the Computer Science & Engineering department during my M.Tech program (completed June 2025). Assisting in coursework, research activities, and student mentorship.',
     achievements: [
       'Published 3 conference papers in 2025 at prestigious international conferences',
       'Developed cricket scorecard automation system achieving 98% accuracy',
       'Led research on disease detection in plants using CNN with 96.1% accuracy',
       'Contributed to skin cancer detection research using ResNet-152 architecture',
-      'Maintained CGPA of 8.71/10 in M.Tech program',
+      'Graduated with CGPA of 8.71/10 in M.Tech program',
     ],
   },
 ];

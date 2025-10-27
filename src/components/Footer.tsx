@@ -18,7 +18,7 @@ const Footer = () => {
           <div>
             <h3 className="text-gradient mb-4 text-2xl font-bold">Vivek Jindal</h3>
             <p className="text-sm text-muted-foreground">
-              M.Tech Scholar | Deep Learning & Computer Vision Researcher.
+              M.Tech (2025) Graduate | Deep Learning & Computer Vision Researcher.
             </p>
           </div>
 
