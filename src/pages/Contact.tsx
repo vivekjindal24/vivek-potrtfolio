@@ -16,6 +16,7 @@ const Contact = () => {
     email: '',
     subject: '',
     message: '',
+    website: '', // honeypot
   });
   const { toast } = useToast();
 
@@ -24,6 +25,15 @@ const Contact = () => {
     setIsLoading(true);
 
     try {
+      // Honeypot: if filled, silently succeed to drop bots
+      if (formData.website) {
+        toast({
+          title: 'Message sent!',
+          description: "Thank you for reaching out. I'll get back to you soon!",
+        });
+        setFormData({ name: '', email: '', subject: '', message: '', website: '' });
+        return;
+      }
       // 1) Try Google Apps Script endpoint if configured (free forever)
       if (isContactEndpointConfigured()) {
         // Use text/plain and no-cors to avoid preflight and CORS issues with Apps Script
@@ -61,7 +71,7 @@ const Contact = () => {
         description: "Thank you for reaching out. I'll get back to you soon!",
       });
 
-      setFormData({ name: '', email: '', subject: '', message: '' });
+      setFormData({ name: '', email: '', subject: '', message: '', website: '' });
     } catch (error) {
       toast({
         title: 'Error',
@@ -191,6 +201,19 @@ const Contact = () => {
                   </div>
                 )}
                 <form onSubmit={handleSubmit} className="space-y-6">
+                  {/* Honeypot field (leave empty) */}
+                  <div className="hidden">
+                    <label htmlFor="website">Website</label>
+                    <input
+                      id="website"
+                      name="website"
+                      type="text"
+                      value={formData.website}
+                      onChange={(e) => setFormData({ ...formData, website: e.target.value })}
+                      autoComplete="off"
+                      tabIndex={-1}
+                    />
+                  </div>
                   <div className="grid gap-6 sm:grid-cols-2">
                     <div className="space-y-2">
                       <label htmlFor="name" className="text-sm font-medium">
