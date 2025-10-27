@@ -49,21 +49,21 @@ const About = () => {
                 <h2 className="mb-6 text-3xl font-bold">My Journey</h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    I'm a dedicated AI/ML researcher and M.Tech (2025) graduate in Computer Science
-                    & Engineering, specialized in Cloud Computing from Medicaps University with a
-                    CGPA of 8.71/10.
+                    I'm Vivek—an AI/ML researcher who loves turning ideas into models and models
+                    into useful products. I care about clarity (in code and communication), reliable
+                    results, and simple interfaces that make complex systems feel approachable.
                   </p>
                   <p>
-                    My research focuses on Convolutional Neural Networks (CNNs) and their
-                    applications in automated systems. My thesis "Next-Gen Cricket Scorecard
-                    Automation Using Deep Neural Networks" achieved 98% accuracy in gesture
-                    recognition. I've published 3 conference papers in 2025 at prestigious IET and
-                    international conferences.
+                    I work primarily with CNNs and modern deep learning stacks. My thesis,
+                    <em>“Next‑Gen Cricket Scorecard Automation Using Deep Neural Networks”</em>, hit
+                    98% accuracy on gesture recognition. Along the way, I published 3 conference
+                    papers in 2025 (including IET venues) across gesture understanding, plant
+                    disease detection, and medical imaging.
                   </p>
                   <p>
-                    As a Teaching Assistant at Medicaps University, I combine academic research with
-                    practical implementation, working on cutting-edge projects in computer vision,
-                    plant disease detection, and medical imaging.
+                    I’ve also taught and mentored as a Teaching Assistant at Medicaps University—
+                    blending research with hands‑on engineering and helping others get their models
+                    from notebooks to production.
                   </p>
                 </div>
               </div>

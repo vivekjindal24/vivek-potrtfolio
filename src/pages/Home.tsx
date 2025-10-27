@@ -97,16 +97,17 @@ const Home = () => {
               variants={itemVariants}
               className="mb-8 text-xl text-muted-foreground sm:text-2xl"
             >
-              M.Tech (2025) Graduate | Deep Learning & Computer Vision Researcher
+              AI/ML Researcher • Computer Vision • Model Builder
             </motion.p>
 
             <motion.p
               variants={itemVariants}
               className="mx-auto mb-12 max-w-2xl text-lg text-muted-foreground"
             >
-              Completed M.Tech in Computer Science & Engineering (Cloud Computing) at Medicaps
-              University in June 2025. Specialized in CNNs, Deep Learning, and Computer Vision with
-              3 conference publications.
+              I design and ship deep learning systems that turn noisy visuals into decisions. My
+              recent work spans CNNs for gesture understanding, plant health, and medical
+              imaging—with 3 peer-reviewed conference papers. I enjoy clean implementations,
+              thoughtful UX, and results you can measure.
             </motion.p>
 
             <motion.div
