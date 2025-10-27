@@ -123,7 +123,7 @@ const Projects = () => {
                       {project.category}
                     </span>
                   </div>
-                  <CardDescription className="text-sm md:text-base">
+                  <CardDescription className="text-justify text-sm leading-relaxed md:text-base">
                     {project.description}
                   </CardDescription>
                 </CardHeader>
