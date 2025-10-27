@@ -62,9 +62,7 @@ const Projects = () => {
   const [selectedCategory, setSelectedCategory] = React.useState('All');
 
   const filteredProjects =
-    selectedCategory === 'All'
-      ? projects
-      : projects.filter((p) => p.category === selectedCategory);
+    selectedCategory === 'All' ? projects : projects.filter((p) => p.category === selectedCategory);
 
   return (
     <div className="min-h-screen pb-20 pt-24">
@@ -74,10 +72,10 @@ const Projects = () => {
           animate={{ opacity: 1, y: 0 }}
           className="mb-16 text-center"
         >
-          <h1 className="mb-4 text-5xl font-bold">
+          <h1 className="mb-4 text-4xl font-bold sm:text-5xl">
             Featured <span className="text-gradient">Projects</span>
           </h1>
-          <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
+          <p className="mx-auto max-w-2xl text-base text-muted-foreground md:text-lg">
             Innovative solutions in machine learning, computer vision, and software development
           </p>
         </motion.div>
@@ -102,7 +100,7 @@ const Projects = () => {
         </motion.div>
 
         {/* Projects Grid */}
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8 lg:grid-cols-3">
           {filteredProjects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -120,19 +118,21 @@ const Projects = () => {
                 </div>
                 <CardHeader>
                   <div className="mb-2 flex items-start justify-between">
-                    <CardTitle className="text-xl">{project.title}</CardTitle>
-                    <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+                    <CardTitle className="text-lg md:text-xl">{project.title}</CardTitle>
+                    <span className="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold leading-none text-primary">
                       {project.category}
                     </span>
                   </div>
-                  <CardDescription>{project.description}</CardDescription>
+                  <CardDescription className="text-sm md:text-base">
+                    {project.description}
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="mb-4 flex flex-wrap gap-2">
+                  <div className="mb-4 flex flex-wrap gap-2.5">
                     {project.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="rounded-md bg-secondary px-2 py-1 text-xs font-medium"
+                        className="inline-flex items-center justify-center rounded-full bg-muted px-3 py-1 text-xs font-medium leading-none text-muted-foreground"
                       >
                         {tech}
                       </span>

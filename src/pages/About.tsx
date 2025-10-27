@@ -28,10 +28,10 @@ const About = () => {
           animate={{ opacity: 1, y: 0 }}
           className="mb-16 text-center"
         >
-          <h1 className="mb-4 text-5xl font-bold">
+          <h1 className="mb-4 text-4xl font-bold sm:text-5xl">
             About <span className="text-gradient">Me</span>
           </h1>
-          <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
+          <p className="mx-auto max-w-2xl text-base text-muted-foreground md:text-lg">
             Passionate researcher and engineer driving innovation in AI and cloud technologies
           </p>
         </motion.div>
@@ -46,24 +46,24 @@ const About = () => {
           >
             <div className="grid gap-12 md:grid-cols-2">
               <div>
-                <h2 className="mb-6 text-3xl font-bold">My Journey</h2>
+                <h2 className="mb-6 text-2xl font-bold md:text-3xl">My Journey</h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    I'm Vivek—an AI/ML researcher who loves turning ideas into models and models
-                    into useful products. I care about clarity (in code and communication), reliable
-                    results, and simple interfaces that make complex systems feel approachable.
+                    I'm Vivek. I’m a computer science engineer who likes building intelligent
+                    systems that make decisions from messy real world data. I focus on clear code,
+                    solid results, and user experiences that feel simple.
                   </p>
                   <p>
-                    I work primarily with CNNs and modern deep learning stacks. My thesis,
-                    <em>“Next‑Gen Cricket Scorecard Automation Using Deep Neural Networks”</em>, hit
-                    98% accuracy on gesture recognition. Along the way, I published 3 conference
-                    papers in 2025 (including IET venues) across gesture understanding, plant
-                    disease detection, and medical imaging.
+                    I work with CNNs and modern deep learning tools. My thesis,{' '}
+                    <em>“Next Gen Cricket Scorecard Automation Using Deep Neural Networks”</em>,
+                    reached 98% accuracy on gesture recognition. I’ve published three conference
+                    papers in 2025 across gesture understanding, plant disease detection, and
+                    medical imaging.
                   </p>
                   <p>
-                    I’ve also taught and mentored as a Teaching Assistant at Medicaps University—
-                    blending research with hands‑on engineering and helping others get their models
-                    from notebooks to production.
+                    I also taught as a Teaching Assistant at Medicaps University. I enjoy helping
+                    teams move models from notebooks into reliable systems and watching ideas become
+                    useful products.
                   </p>
                 </div>
               </div>
