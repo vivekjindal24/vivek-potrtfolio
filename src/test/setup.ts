@@ -14,7 +14,6 @@ class MockIntersectionObserver {
   }
 }
 
-// @ts-expect-error globalThis may not declare IntersectionObserver in JSDOM
 if (!('IntersectionObserver' in globalThis)) {
   (globalThis as unknown as { IntersectionObserver: unknown }).IntersectionObserver =
     MockIntersectionObserver as unknown as typeof IntersectionObserver;
