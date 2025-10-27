@@ -11,10 +11,10 @@ const publications = [
     year: 2025,
     type: 'publication',
     scopus: true,
-    doi: 'IET Conference Proceedings (ISSN: 2732-4494)',
+    doi: 'https://doi.org/10.1049/icp.2025.1671',
     abstract:
       'Developed a machine learning model to automate cricket scorecard generation by interpreting umpire hand gestures from image data. Implemented a CNN-based solution achieving 98% accuracy, improving efficiency by 10% over the baseline.',
-    link: null,
+    link: 'https://doi.org/10.1049/icp.2025.1671',
   },
   {
     title: 'Automated Disease Detection in Banana Using Convolutional Neural Networks (CNNs)',
