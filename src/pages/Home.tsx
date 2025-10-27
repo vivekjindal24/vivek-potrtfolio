@@ -88,21 +88,21 @@ const Home = () => {
 
             <motion.h1
               variants={itemVariants}
-              className="mb-4 text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl"
+              className="mb-4 text-4xl font-bold tracking-tight sm:text-6xl md:text-7xl"
             >
               Hi, I'm <span className="text-gradient">Vivek Jindal</span>
             </motion.h1>
 
             <motion.p
               variants={itemVariants}
-              className="mb-8 text-xl text-muted-foreground sm:text-2xl"
+              className="mb-8 text-lg text-muted-foreground sm:text-2xl"
             >
               AI/ML Researcher • Computer Vision • Model Builder
             </motion.p>
 
             <motion.p
               variants={itemVariants}
-              className="mx-auto mb-12 max-w-2xl text-lg text-muted-foreground"
+              className="mx-auto mb-12 max-w-2xl text-base text-muted-foreground md:text-lg"
             >
               I design and ship deep learning systems that turn noisy visuals into decisions. My
               recent work spans CNNs for gesture understanding, plant health, and medical
