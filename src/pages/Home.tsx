@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Download, Mail, Github, Linkedin, ArrowRight } from 'lucide-react';
+import { Download, Mail, Github, Linkedin, ArrowRight, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { TypeAnimation } from 'react-type-animation';
@@ -126,6 +126,12 @@ const Home = () => {
                 <a href="/resume.pdf" download>
                   <Download className="mr-2 h-4 w-4 transition-transform group-hover:scale-110 sm:h-5 sm:w-5" />
                   <span className="text-sm sm:text-base">Download Resume</span>
+                </a>
+              </Button>
+              <Button size="lg" variant="outline" className="group w-full sm:w-auto" asChild>
+                <a href="/Vivek Jindal MTech Thesis.pdf" download>
+                  <FileText className="mr-2 h-4 w-4 transition-transform group-hover:scale-110 sm:h-5 sm:w-5" />
+                  <span className="text-sm sm:text-base">Download Thesis</span>
                 </a>
               </Button>
               <Button size="lg" variant="outline" className="w-full sm:w-auto" asChild>
