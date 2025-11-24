@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { GraduationCap, Award, Code, Brain } from 'lucide-react';
+import { GraduationCap, Award, Code, Brain, FileText } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const About = () => {
@@ -82,6 +82,14 @@ const About = () => {
                       <br />
                       Medicaps University - CGPA: 8.71/10
                     </p>
+                    <a
+                      href="/Vivek Jindal MTech Thesis.pdf"
+                      download
+                      className="mt-2 inline-flex items-center gap-1.5 text-xs text-primary transition-colors hover:underline sm:text-sm"
+                    >
+                      <FileText className="h-3 w-3 sm:h-4 sm:w-4" />
+                      Download Thesis
+                    </a>
                   </div>
                 </div>
 
