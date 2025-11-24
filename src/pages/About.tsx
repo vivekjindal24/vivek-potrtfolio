@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { GraduationCap, Award, Code, Brain, FileText } from 'lucide-react';
+import { GraduationCap, Award, Code, Brain, Download } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const About = () => {
@@ -75,7 +75,7 @@ const About = () => {
                   <div className="rounded-full bg-primary/10 p-2 sm:p-3">
                     <GraduationCap className="h-5 w-5 text-primary sm:h-6 sm:w-6" />
                   </div>
-                  <div>
+                  <div className="flex-1">
                     <h3 className="text-sm font-semibold sm:text-base">Education</h3>
                     <p className="text-xs text-muted-foreground sm:text-sm">
                       M.Tech in CSE (Cloud Computing)
@@ -87,7 +87,7 @@ const About = () => {
                       download
                       className="mt-2 inline-flex items-center gap-1.5 text-xs text-primary transition-colors hover:underline sm:text-sm"
                     >
-                      <FileText className="h-3 w-3 sm:h-4 sm:w-4" />
+                      <Download className="h-3 w-3 sm:h-4 sm:w-4" />
                       Download Thesis
                     </a>
                   </div>
