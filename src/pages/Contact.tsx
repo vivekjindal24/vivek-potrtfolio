@@ -94,73 +94,77 @@ const Contact = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mb-16 text-center"
+          className="mb-12 text-center sm:mb-16"
         >
-          <h1 className="mb-4 text-5xl font-bold">
+          <h1 className="mb-4 text-3xl font-bold sm:text-4xl md:text-5xl">
             Get in <span className="text-gradient">Touch</span>
           </h1>
-          <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
+          <p className="mx-auto max-w-2xl px-4 text-sm text-muted-foreground sm:px-0 sm:text-base md:text-lg">
             Have a question or want to work together? Feel free to reach out!
           </p>
         </motion.div>
 
-        <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-3">
+        <div className="mx-auto grid max-w-6xl gap-6 px-4 sm:gap-8 sm:px-0 lg:grid-cols-3">
           {/* Contact Information */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
-            className="space-y-6"
+            className="space-y-4 sm:space-y-6"
           >
             <Card>
-              <CardHeader>
-                <CardTitle>Contact Information</CardTitle>
-                <CardDescription>Let's connect and discuss opportunities</CardDescription>
+              <CardHeader className="p-4 sm:p-6">
+                <CardTitle className="text-lg sm:text-xl">Contact Information</CardTitle>
+                <CardDescription className="text-xs sm:text-sm">
+                  Let's connect and discuss opportunities
+                </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="flex items-start gap-4">
-                  <div className="rounded-full bg-primary/10 p-3">
-                    <Mail className="h-5 w-5 text-primary" />
+              <CardContent className="space-y-3 p-4 pt-0 sm:space-y-4 sm:p-6 sm:pt-0">
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <div className="rounded-full bg-primary/10 p-2 sm:p-3">
+                    <Mail className="h-4 w-4 text-primary sm:h-5 sm:w-5" />
                   </div>
                   <div>
-                    <h3 className="font-semibold">Email</h3>
+                    <h3 className="text-sm font-semibold sm:text-base">Email</h3>
                     <a
                       href="mailto:vivek.jindal.sbg@gmail.com"
-                      className="text-sm text-muted-foreground transition-colors hover:text-primary"
+                      className="break-all text-xs text-muted-foreground transition-colors hover:text-primary sm:text-sm"
                     >
                       vivek.jindal.sbg@gmail.com
                     </a>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="rounded-full bg-primary/10 p-3">
-                    <MapPin className="h-5 w-5 text-primary" />
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <div className="rounded-full bg-primary/10 p-2 sm:p-3">
+                    <MapPin className="h-4 w-4 text-primary sm:h-5 sm:w-5" />
                   </div>
                   <div>
-                    <h3 className="font-semibold">Location</h3>
-                    <p className="text-sm text-muted-foreground">Indore, India</p>
+                    <h3 className="text-sm font-semibold sm:text-base">Location</h3>
+                    <p className="text-xs text-muted-foreground sm:text-sm">Indore, India</p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
             <Card>
-              <CardHeader>
-                <CardTitle>Social Links</CardTitle>
-                <CardDescription>Connect with me online</CardDescription>
+              <CardHeader className="p-4 sm:p-6">
+                <CardTitle className="text-lg sm:text-xl">Social Links</CardTitle>
+                <CardDescription className="text-xs sm:text-sm">
+                  Connect with me online
+                </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-3">
+              <CardContent className="space-y-2 p-4 pt-0 sm:space-y-3 sm:p-6 sm:pt-0">
                 <a
                   href="https://github.com/vivekjindal"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 rounded-lg p-3 transition-colors hover:bg-secondary"
+                  className="flex items-center gap-2 rounded-lg p-2 transition-colors hover:bg-secondary sm:gap-3 sm:p-3"
                 >
-                  <Github className="h-5 w-5 text-primary" />
+                  <Github className="h-4 w-4 text-primary sm:h-5 sm:w-5" />
                   <div>
-                    <div className="font-medium">GitHub</div>
-                    <div className="text-xs text-muted-foreground">@vivekjindal</div>
+                    <div className="text-sm font-medium sm:text-base">GitHub</div>
+                    <div className="text-[10px] text-muted-foreground sm:text-xs">@vivekjindal</div>
                   </div>
                 </a>
 
@@ -168,12 +172,14 @@ const Contact = () => {
                   href="https://www.linkedin.com/in/24vivek-jindal"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 rounded-lg p-3 transition-colors hover:bg-secondary"
+                  className="flex items-center gap-2 rounded-lg p-2 transition-colors hover:bg-secondary sm:gap-3 sm:p-3"
                 >
-                  <Linkedin className="h-5 w-5 text-primary" />
+                  <Linkedin className="h-4 w-4 text-primary sm:h-5 sm:w-5" />
                   <div>
-                    <div className="font-medium">LinkedIn</div>
-                    <div className="text-xs text-muted-foreground">/in/24vivek-jindal</div>
+                    <div className="text-sm font-medium sm:text-base">LinkedIn</div>
+                    <div className="text-[10px] text-muted-foreground sm:text-xs">
+                      /in/24vivek-jindal
+                    </div>
                   </div>
                 </a>
               </CardContent>
@@ -188,19 +194,19 @@ const Contact = () => {
             className="lg:col-span-2"
           >
             <Card>
-              <CardHeader>
-                <CardTitle>Send a Message</CardTitle>
-                <CardDescription>
+              <CardHeader className="p-4 sm:p-6">
+                <CardTitle className="text-lg sm:text-xl">Send a Message</CardTitle>
+                <CardDescription className="text-xs sm:text-sm">
                   Fill out the form below and I'll get back to you as soon as possible
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="p-4 pt-0 sm:p-6 sm:pt-0">
                 {!isContactEndpointConfigured() && !isEmailConfigured() && (
-                  <div className="rounded-md border border-yellow-500/30 bg-yellow-500/10 p-3 text-sm text-yellow-800 dark:text-yellow-200">
+                  <div className="mb-4 rounded-md border border-yellow-500/30 bg-yellow-500/10 p-2 text-xs text-yellow-800 dark:text-yellow-200 sm:mb-6 sm:p-3 sm:text-sm">
                     Note: The contact form isn't configured yet. Please email me directly.
                   </div>
                 )}
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                   {/* Honeypot field (leave empty) */}
                   <div className="hidden">
                     <label htmlFor="website">Website</label>
@@ -214,9 +220,9 @@ const Contact = () => {
                       tabIndex={-1}
                     />
                   </div>
-                  <div className="grid gap-6 sm:grid-cols-2">
-                    <div className="space-y-2">
-                      <label htmlFor="name" className="text-sm font-medium">
+                  <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
+                    <div className="space-y-1.5 sm:space-y-2">
+                      <label htmlFor="name" className="text-xs font-medium sm:text-sm">
                         Name *
                       </label>
                       <Input
@@ -230,8 +236,8 @@ const Contact = () => {
                       />
                     </div>
 
-                    <div className="space-y-2">
-                      <label htmlFor="email" className="text-sm font-medium">
+                    <div className="space-y-1.5 sm:space-y-2">
+                      <label htmlFor="email" className="text-xs font-medium sm:text-sm">
                         Email *
                       </label>
                       <Input
@@ -247,8 +253,8 @@ const Contact = () => {
                     </div>
                   </div>
 
-                  <div className="space-y-2">
-                    <label htmlFor="subject" className="text-sm font-medium">
+                  <div className="space-y-1.5 sm:space-y-2">
+                    <label htmlFor="subject" className="text-xs font-medium sm:text-sm">
                       Subject *
                     </label>
                     <Input
@@ -262,8 +268,8 @@ const Contact = () => {
                     />
                   </div>
 
-                  <div className="space-y-2">
-                    <label htmlFor="message" className="text-sm font-medium">
+                  <div className="space-y-1.5 sm:space-y-2">
+                    <label htmlFor="message" className="text-xs font-medium sm:text-sm">
                       Message *
                     </label>
                     <Textarea
@@ -271,7 +277,8 @@ const Contact = () => {
                       name="message"
                       placeholder="Your message..."
                       required
-                      rows={6}
+                      rows={4}
+                      className="sm:min-h-[120px]"
                       value={formData.message}
                       onChange={handleChange}
                       disabled={isLoading}
@@ -280,11 +287,11 @@ const Contact = () => {
 
                   <Button type="submit" size="lg" disabled={isLoading} className="w-full">
                     {isLoading ? (
-                      'Sending...'
+                      <span className="text-sm sm:text-base">Sending...</span>
                     ) : (
                       <>
-                        <Send className="mr-2 h-5 w-5" />
-                        Send Message
+                        <Send className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                        <span className="text-sm sm:text-base">Send Message</span>
                       </>
                     )}
                   </Button>

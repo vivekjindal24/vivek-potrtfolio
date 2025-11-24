@@ -70,12 +70,12 @@ const Projects = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mb-16 text-center"
+          className="mb-12 text-center sm:mb-16"
         >
-          <h1 className="mb-4 text-4xl font-bold sm:text-5xl">
+          <h1 className="mb-4 text-3xl font-bold sm:text-4xl md:text-5xl">
             Featured <span className="text-gradient">Projects</span>
           </h1>
-          <p className="mx-auto max-w-2xl text-base text-muted-foreground md:text-lg">
+          <p className="mx-auto max-w-2xl px-4 text-sm text-muted-foreground sm:px-0 sm:text-base md:text-lg">
             Innovative solutions in machine learning, computer vision, and software development
           </p>
         </motion.div>
@@ -85,7 +85,7 @@ const Projects = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="mb-12 flex flex-wrap justify-center gap-3"
+          className="mb-8 flex flex-wrap justify-center gap-2 px-4 sm:mb-12 sm:gap-3 sm:px-0"
         >
           {categories.map((category) => (
             <Button
@@ -100,7 +100,7 @@ const Projects = () => {
         </motion.div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 px-4 sm:grid-cols-2 sm:px-0 md:gap-8 lg:grid-cols-3">
           {filteredProjects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -110,35 +110,37 @@ const Projects = () => {
               transition={{ delay: index * 0.1 }}
             >
               <Card className="group h-full overflow-hidden transition-all hover:-translate-y-2 hover:shadow-2xl">
-                <div className="relative h-48 overflow-hidden bg-gradient-to-br from-primary/20 to-purple-500/20">
+                <div className="relative h-40 overflow-hidden bg-gradient-to-br from-primary/20 to-purple-500/20 sm:h-48">
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <Code2 className="h-20 w-20 text-primary/30" />
+                    <Code2 className="h-16 w-16 text-primary/30 sm:h-20 sm:w-20" />
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
                 </div>
-                <CardHeader>
+                <CardHeader className="p-4 sm:p-6">
                   <div className="mb-2 flex items-start justify-between gap-2">
-                    <CardTitle className="text-lg md:text-xl">{project.title}</CardTitle>
-                    <span className="inline-flex shrink-0 items-center justify-center whitespace-nowrap rounded-full bg-blue-500/10 px-3 py-1 text-sm font-semibold leading-none text-blue-600 dark:text-blue-400">
+                    <CardTitle className="text-base leading-tight sm:text-lg md:text-xl">
+                      {project.title}
+                    </CardTitle>
+                    <span className="inline-flex shrink-0 items-center justify-center whitespace-nowrap rounded-full bg-blue-500/10 px-2 py-0.5 text-xs font-semibold leading-none text-blue-600 dark:text-blue-400 sm:px-3 sm:py-1 sm:text-sm">
                       {project.category}
                     </span>
                   </div>
-                  <CardDescription className="text-justify text-sm leading-relaxed md:text-base">
+                  <CardDescription className="text-justify text-xs leading-relaxed text-muted-foreground sm:text-sm md:text-base">
                     {project.description}
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <div className="mb-4 flex flex-wrap gap-2.5">
+                <CardContent className="p-4 pt-0 sm:p-6 sm:pt-0">
+                  <div className="mb-4 flex flex-wrap gap-1.5 sm:gap-2">
                     {project.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="inline-flex items-center justify-center rounded-full bg-muted px-3 py-1 text-xs font-medium leading-none text-muted-foreground"
+                        className="inline-flex items-center justify-center rounded-full bg-muted px-2 py-0.5 text-[10px] font-medium leading-none text-muted-foreground sm:px-3 sm:py-1 sm:text-xs"
                       >
                         {tech}
                       </span>
                     ))}
                   </div>
-                  <div className="flex gap-2">
+                  <div className="flex flex-wrap gap-2">
                     {project.github && (
                       <Button size="sm" variant="outline" asChild>
                         <a href={project.github} target="_blank" rel="noopener noreferrer">

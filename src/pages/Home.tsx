@@ -89,14 +89,14 @@ const Home = () => {
 
             <motion.h1
               variants={itemVariants}
-              className="mb-4 text-4xl font-bold tracking-tight sm:text-6xl md:text-7xl"
+              className="mb-4 text-3xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
             >
               Hi, I'm <span className="text-gradient">Vivek Jindal</span>
             </motion.h1>
 
             <motion.p
               variants={itemVariants}
-              className="mb-8 text-lg text-muted-foreground sm:text-2xl"
+              className="mb-8 text-base text-muted-foreground sm:text-xl md:text-2xl"
               aria-live="polite"
             >
               <TypeAnimation
@@ -110,7 +110,7 @@ const Home = () => {
 
             <motion.p
               variants={itemVariants}
-              className="mx-auto mb-12 max-w-2xl text-base text-muted-foreground md:text-lg"
+              className="mx-auto mb-10 max-w-2xl px-4 text-sm leading-relaxed text-muted-foreground sm:px-0 sm:text-base md:mb-12 md:text-lg"
             >
               I design and ship deep learning systems that turn noisy visuals into decisions. My
               recent work spans CNNs for gesture understanding, plant health, and medical
@@ -120,47 +120,50 @@ const Home = () => {
 
             <motion.div
               variants={itemVariants}
-              className="flex flex-wrap items-center justify-center gap-4"
+              className="flex flex-col items-center justify-center gap-3 px-4 sm:flex-row sm:gap-4 sm:px-0"
             >
-              <Button size="lg" className="group" asChild>
+              <Button size="lg" className="group w-full sm:w-auto" asChild>
                 <a href="/resume.pdf" download>
-                  <Download className="mr-2 h-5 w-5 transition-transform group-hover:scale-110" />
-                  Download Resume
+                  <Download className="mr-2 h-4 w-4 transition-transform group-hover:scale-110 sm:h-5 sm:w-5" />
+                  <span className="text-sm sm:text-base">Download Resume</span>
                 </a>
               </Button>
-              <Button size="lg" variant="outline" asChild>
+              <Button size="lg" variant="outline" className="w-full sm:w-auto" asChild>
                 <Link to="/contact">
-                  <Mail className="mr-2 h-5 w-5" />
-                  Get in Touch
+                  <Mail className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  <span className="text-sm sm:text-base">Get in Touch</span>
                 </Link>
               </Button>
             </motion.div>
 
             <motion.div
               variants={itemVariants}
-              className="mt-12 flex items-center justify-center gap-6"
+              className="mt-8 flex items-center justify-center gap-4 sm:mt-12 sm:gap-6"
             >
               <a
                 href="https://github.com/vivekjindal"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group rounded-full bg-secondary p-3 transition-all hover:scale-110 hover:bg-primary"
+                className="group rounded-full bg-secondary p-2.5 transition-all hover:scale-110 hover:bg-primary sm:p-3"
+                aria-label="GitHub Profile"
               >
-                <Github className="h-6 w-6 transition-colors group-hover:text-primary-foreground" />
+                <Github className="h-5 w-5 transition-colors group-hover:text-primary-foreground sm:h-6 sm:w-6" />
               </a>
               <a
                 href="https://www.linkedin.com/in/24vivek-jindal"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group rounded-full bg-secondary p-3 transition-all hover:scale-110 hover:bg-primary"
+                className="group rounded-full bg-secondary p-2.5 transition-all hover:scale-110 hover:bg-primary sm:p-3"
+                aria-label="LinkedIn Profile"
               >
-                <Linkedin className="h-6 w-6 transition-colors group-hover:text-primary-foreground" />
+                <Linkedin className="h-5 w-5 transition-colors group-hover:text-primary-foreground sm:h-6 sm:w-6" />
               </a>
               <a
                 href="mailto:vivek.jindal.sbg@gmail.com"
-                className="group rounded-full bg-secondary p-3 transition-all hover:scale-110 hover:bg-primary"
+                className="group rounded-full bg-secondary p-2.5 transition-all hover:scale-110 hover:bg-primary sm:p-3"
+                aria-label="Email Contact"
               >
-                <Mail className="h-6 w-6 transition-colors group-hover:text-primary-foreground" />
+                <Mail className="h-5 w-5 transition-colors group-hover:text-primary-foreground sm:h-6 sm:w-6" />
               </a>
             </motion.div>
           </motion.div>
@@ -183,9 +186,9 @@ const Home = () => {
       </section>
 
       {/* Quick Stats */}
-      <section className="py-20">
+      <section className="py-12 sm:py-16 md:py-20">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8 md:grid-cols-3">
             {[
               { label: 'Conference Publications', value: '3' },
               { label: 'M.Tech CGPA', value: '8.71' },
@@ -197,10 +200,12 @@ const Home = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.2 }}
-                className="glass dark:glass-dark rounded-lg p-8 text-center shadow-xl"
+                className="glass dark:glass-dark rounded-lg p-6 text-center shadow-xl sm:p-8"
               >
-                <div className="text-gradient mb-2 text-4xl font-bold">{stat.value}</div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
+                <div className="text-gradient mb-2 text-3xl font-bold sm:text-4xl">
+                  {stat.value}
+                </div>
+                <div className="text-xs text-muted-foreground sm:text-sm">{stat.label}</div>
               </motion.div>
             ))}
           </div>
