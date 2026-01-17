@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
+import { Analytics } from '@vercel/analytics/react';
 import { Toaster } from '@/components/ui/toaster';
 import { ThemeProvider } from '@/context/ThemeProvider';
 import Layout from '@/components/Layout';
@@ -31,6 +32,7 @@ function App() {
           </Routes>
         </AnimatePresence>
         <Toaster />
+        <Analytics />
       </Router>
     </ThemeProvider>
   );
