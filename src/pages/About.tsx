@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { GraduationCap, Award, Code, Brain, Download } from 'lucide-react';
+import { GraduationCap, Award, Code, Brain, Download, ShieldCheck } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const About = () => {
@@ -14,9 +14,9 @@ const About = () => {
       category: 'AI/ML',
       items: ['TensorFlow', 'PyTorch', 'CNNs', 'Deep Learning', 'Computer Vision'],
     },
-    { category: 'Cloud', items: ['AWS', 'Azure', 'Google Cloud', 'Docker', 'Kubernetes'] },
+    { category: 'Cloud', items: ['AWS', 'Azure', 'Google Cloud', 'Docker', 'Firebase'] },
     { category: 'Programming', items: ['Python', 'Java', 'JavaScript', 'TypeScript', 'C++'] },
-    { category: 'Frameworks', items: ['React', 'Node.js', 'FastAPI', 'Spring Boot', 'Django'] },
+    { category: 'Frameworks', items: ['React', 'Node.js', 'Flask', 'FastAPI', 'Django'] },
   ];
 
   return (
@@ -58,12 +58,14 @@ const About = () => {
                   <p>
                     I work with CNNs and modern deep learning tools. My thesis,{' '}
                     <em>“Next Gen Cricket Scorecard Automation Using Deep Neural Networks”</em>,
-                    reached 98% accuracy on gesture recognition. I’ve published three conference
-                    papers in 2025 across gesture understanding, plant disease detection, and
-                    medical imaging.
+                    reached 98% accuracy on gesture recognition. I’ve published three papers in 2025
+                    across gesture understanding, plant disease detection, and medical imaging,
+                    and co-invented two Indian patents in blockchain fraud detection and
+                    IoT-based manufacturing fault detection.
                   </p>
                   <p>
-                    I also taught as a Teaching Assistant at Medicaps University. I enjoy helping
+                    I also taught as a Teaching Assistant at Medicaps University, conducting lab
+                    sessions and mentoring students. I enjoy helping
                     teams move models from notebooks into reliable systems and watching ideas become
                     useful products.
                   </p>
@@ -100,9 +102,9 @@ const About = () => {
                   <div>
                     <h3 className="text-sm font-semibold sm:text-base">Research</h3>
                     <p className="text-xs text-muted-foreground sm:text-sm">
-                      3 Conference Publications (2025)
+                      3 Publications & 2 Patents (2025)
                       <br />
-                      IET & International Conferences
+                      IET, GRENZE Journal & Indian Patents
                     </p>
                   </div>
                 </div>
@@ -116,7 +118,7 @@ const About = () => {
                     <p className="text-xs text-muted-foreground sm:text-sm">
                       Teaching Assistant
                       <br />
-                      Medicaps University (2022 - Present)
+                      Medicaps University (Oct 2022 - Present)
                     </p>
                   </div>
                 </div>
@@ -137,10 +139,10 @@ const About = () => {
 
                 <div className="flex items-start gap-3 sm:gap-4">
                   <div className="rounded-full bg-primary/10 p-2 sm:p-3">
-                    <Award className="h-5 w-5 text-primary sm:h-6 sm:w-6" />
+                    <ShieldCheck className="h-5 w-5 text-primary sm:h-6 sm:w-6" />
                   </div>
                   <div>
-                    <h3 className="text-sm font-semibold sm:text-base">Certification</h3>
+                    <h3 className="text-sm font-semibold sm:text-base">Certifications</h3>
                     <p className="text-xs text-muted-foreground sm:text-sm">
                       <a
                         href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=9E52AC7305972CDDDEB5A1FC373C5626DB7943E07B9027129FFDCCDE958C06FC"
@@ -151,7 +153,11 @@ const About = () => {
                         Oracle APEX Cloud Developer Certified Professional (Verified)
                       </a>
                       <br />
-                      Oracle
+                      Fortinet Certified Associate Cybersecurity
+                      <br />
+                      Google Cloud Fundamentals
+                      <br />
+                      <span className="text-primary">+ 7 more certifications</span>
                     </p>
                   </div>
                 </div>

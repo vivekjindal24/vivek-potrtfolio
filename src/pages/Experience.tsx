@@ -7,15 +7,15 @@ const experiences = [
     title: 'Teaching Assistant',
     company: 'Medicaps University',
     location: 'Indore, India',
-    period: 'August 2022 - Present',
+    period: 'October 2022 - Present',
     description:
-      'Supporting the Computer Science & Engineering department during my M.Tech program (completed June 2025). Assisting in coursework, research activities, and student mentorship.',
+      'Supporting the Computer Science & Engineering department during M.Tech program (completed June 2025). Conducting lab sessions, assisting in coursework, research activities, and student mentorship.',
     achievements: [
-      'Published 3 conference papers in 2025 at prestigious international conferences',
-      'Developed cricket scorecard automation system achieving 98% accuracy',
-      'Led research on disease detection in plants using CNN with 96.1% accuracy',
-      'Contributed to skin cancer detection research using ResNet-152 architecture',
-      'Graduated with CGPA of 8.71/10 in M.Tech program',
+      'Conducted lab sessions for B.Tech CSE students in Data Structures, Algorithms, and Database Systems',
+      'Supported faculty in course material design, lab manuals, and student guidance for core technical subjects',
+      'Contributed to faculty research and departmental projects through documentation, literature review, and technical support',
+      'Managed departmental social media handles, increasing engagement by 30% through targeted academic and research content',
+      'Published 3 research papers in 2025 and co-invented 2 Indian patents',
     ],
   },
 ];
@@ -32,7 +32,8 @@ const education = [
       'https://catalog-education.oracle.com/ords/certview/sharebadge?id=9E52AC7305972CDDDEB5A1FC373C5626DB7943E07B9027129FFDCCDE958C06FC',
     achievements: [
       'Thesis: "Next-Gen Cricket Scorecard Automation Using Deep Neural Networks"',
-      'Published 3 conference papers in IET and international conferences',
+      'Published 3 research papers in IET and international conferences/journals',
+      'Co-invented 2 Indian patents in blockchain fraud detection and IoT-based fault detection',
       'Specialized in Cloud Computing, Deep Learning, and Computer Vision',
       'Developed novel CNN-based solutions for real-world applications',
       'Certification: Oracle APEX Cloud Developer Certified Professional (Oracle)',
@@ -42,9 +43,9 @@ const education = [
   {
     degree: 'Bachelor of Technology - Computer Science & Engineering',
     specialization: 'Core',
-    institution: 'Rajiv Gandhi Proudyogiki Vishwavidyalaya',
-    location: 'Bhopal, India',
-    period: 'August 2018 - May 2022',
+    institution: 'Sushila Devi Bansal College of Technology (Aff. to RGPV, Bhopal)',
+    location: 'Indore, India',
+    period: 'August 2018 - June 2022',
     grade: 'CGPA: 6.93/10',
     achievements: [
       'Thesis: "Hotel Management System"',
