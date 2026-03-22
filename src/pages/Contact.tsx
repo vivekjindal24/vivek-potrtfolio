@@ -156,7 +156,7 @@ const Contact = () => {
               </CardHeader>
               <CardContent className="space-y-2 p-4 pt-0 sm:space-y-3 sm:p-6 sm:pt-0">
                 <a
-                  href="https://github.com/vivekjindal"
+                  href="https://github.com/vivekjindal24"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 rounded-lg p-2 transition-colors hover:bg-secondary sm:gap-3 sm:p-3"
@@ -164,7 +164,7 @@ const Contact = () => {
                   <Github className="h-4 w-4 text-primary sm:h-5 sm:w-5" />
                   <div>
                     <div className="text-sm font-medium sm:text-base">GitHub</div>
-                    <div className="text-[10px] text-muted-foreground sm:text-xs">@vivekjindal</div>
+                    <div className="text-[10px] text-muted-foreground sm:text-xs">@vivekjindal24</div>
                   </div>
                 </a>
 

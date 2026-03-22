@@ -114,8 +114,8 @@ const Home = () => {
             >
               I design and ship deep learning systems that turn noisy visuals into decisions. My
               recent work spans CNNs for gesture understanding, plant health, and medical
-              imaging—with 3 peer-reviewed conference papers. I enjoy clean implementations,
-              thoughtful UX, and results you can measure.
+              imaging—with 3 peer-reviewed papers and 2 Indian patents. I enjoy clean
+              implementations, thoughtful UX, and results you can measure.
             </motion.p>
 
             <motion.div
@@ -141,7 +141,7 @@ const Home = () => {
               className="mt-8 flex items-center justify-center gap-4 sm:mt-12 sm:gap-6"
             >
               <a
-                href="https://github.com/vivekjindal"
+                href="https://github.com/vivekjindal24"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group rounded-full bg-secondary p-2.5 transition-all hover:scale-110 hover:bg-primary sm:p-3"
@@ -188,9 +188,10 @@ const Home = () => {
       {/* Quick Stats */}
       <section className="py-12 sm:py-16 md:py-20">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8 md:grid-cols-3">
+          <div className="grid grid-cols-2 gap-6 sm:grid-cols-2 sm:gap-8 md:grid-cols-4">
             {[
-              { label: 'Conference Publications', value: '3' },
+              { label: 'Research Publications', value: '3' },
+              { label: 'Indian Patents', value: '2' },
               { label: 'M.Tech CGPA', value: '8.71' },
               { label: 'Research Projects', value: '5+' },
             ].map((stat, index) => (

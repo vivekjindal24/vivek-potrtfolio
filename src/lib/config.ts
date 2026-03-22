@@ -2,14 +2,15 @@ export const siteConfig = {
   name: 'Vivek Jindal',
   title: 'M.Tech (2025) Graduate | Deep Learning & Computer Vision Researcher',
   description:
-    'M.Tech (2025) in Computer Science & Engineering (Cloud Computing) from Medicaps University. Specialized in deep learning, computer vision, and neural networks with 3 conference publications.',
+    'M.Tech (2025) in Computer Science & Engineering (Cloud Computing) from Medicaps University. Specialized in deep learning, computer vision, and neural networks with 3 publications, 2 patents, and 10 certifications.',
   url: 'https://vivekjindal.dev',
   ogImage: '/og-image.jpg',
   links: {
     email: 'vivek.jindal.sbg@gmail.com',
-    github: 'https://github.com/vivekjindal',
+    github: 'https://github.com/vivekjindal24',
     linkedin: 'https://www.linkedin.com/in/24vivek-jindal',
     whatsapp: '+919755872328',
+    orcid: 'https://orcid.org/0009-0003-5902-3610',
   },
   keywords: [
     'Vivek Jindal',
@@ -26,5 +27,9 @@ export const siteConfig = {
     'Oracle APEX',
     'Oracle APEX Cloud Developer',
     'Oracle Certification',
+    'Patents',
+    'Fortinet Cybersecurity',
+    'Google Cloud',
+    'Cloud Computing',
   ],
 };
