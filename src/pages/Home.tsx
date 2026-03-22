@@ -188,7 +188,7 @@ const Home = () => {
       {/* Quick Stats */}
       <section className="py-12 sm:py-16 md:py-20">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 gap-6 sm:grid-cols-2 sm:gap-8 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-6 sm:gap-8 md:grid-cols-4">
             {[
               { label: 'Research Publications', value: '3' },
               { label: 'Indian Patents', value: '2' },
