@@ -6,9 +6,19 @@ import { Button } from '@/components/ui/button';
 
 const projects = [
   {
+    title: 'YouTube Trending Video Classification',
+    description:
+      'Co-authored a research paper analyzing YouTube trending videos using engagement metrics and text features. Implemented classification models to predict trending status; performed feature extraction, model training, evaluation, and interpretation with Python libraries. (Under Review, 2026)',
+    image: '/projects/youtube.jpg',
+    technologies: ['Python', 'pandas', 'scikit-learn', 'NLP', 'Machine Learning'],
+    github: null,
+    demo: null,
+    category: 'Machine Learning',
+  },
+  {
     title: 'Cricket Scorecard Automation',
     description:
-      'Developed a machine learning model to automate cricket scorecard generation by interpreting umpire hand gestures from image data. Implemented a CNN-based solution achieving 98% accuracy, improving efficiency by 10% over the baseline.',
+      'Developed a CNN-based system to automate cricket scorecard generation by interpreting umpire hand gestures from image data. Achieved 98% accuracy, improving efficiency by 10% over baseline methods.',
     image: '/projects/cricket.jpg',
     technologies: ['Python', 'TensorFlow', 'OpenCV', 'CNN', 'Deep Learning'],
     github: null,
@@ -18,7 +28,7 @@ const projects = [
   {
     title: 'Automated Disease Detection in Banana',
     description:
-      'Developed a CNN-based image classification model to identify banana leaf diseases. Outperformed VGG-16, ResNet-50, EfficientNet achieving 96.1% accuracy with exceptional precision and recall. Proposed a scalable framework for plant health monitoring.',
+      'Designed a CNN-based image classification model to identify banana leaf diseases such as Bacterial Wilt, Fusarium Wilt, and Black Sigatoka. Outperformed VGG-16, ResNet-50, and EfficientNet — reaching 96.1% accuracy.',
     image: '/projects/banana.jpg',
     technologies: ['Python', 'PyTorch', 'CNN', 'VGG-16', 'ResNet-50', 'Computer Vision'],
     github: null,
@@ -26,9 +36,19 @@ const projects = [
     category: 'Computer Vision',
   },
   {
+    title: 'AWS-Enabled Cloud Database Integration',
+    description:
+      'Built a cloud-deployed application connecting a MySQL database on AWS. Provisioned EC2 compute resources, configured S3 buckets for storage, and defined IAM roles/policies for secure least-privilege access. Used Python/Bash automation for deployment and maintenance.',
+    image: '/projects/aws.jpg',
+    technologies: ['AWS', 'EC2', 'S3', 'IAM', 'MySQL', 'Python', 'Bash'],
+    github: null,
+    demo: null,
+    category: 'Cloud',
+  },
+  {
     title: 'Plant Recognition System',
     description:
-      'Built a deep learning model to detect plant species in leaf images using CNNs. Designed for expansion to detect plant diseases. Optimized for high-accuracy classification in agricultural and botanical applications.',
+      'Built a deep learning model using CNNs to detect plant species from leaf images. Optimized for high-accuracy classification with potential scalability for plant disease detection in agricultural and botanical applications.',
     image: '/projects/plant.jpg',
     technologies: ['Python', 'TensorFlow', 'CNN', 'Image Classification'],
     github: null,
@@ -38,22 +58,12 @@ const projects = [
   {
     title: 'Career Guidance System',
     description:
-      'Designed a system to guide students in selecting suitable career paths. Integrated a recommendation engine that maps student preferences with relevant career options. Included offline counseling fallback support.',
+      'Developed a recommendation-based system to assist students in selecting suitable career paths. Integrated a rule-based matching engine with offline counseling support to enhance user satisfaction and accessibility.',
     image: '/projects/career.jpg',
     technologies: ['Python', 'Machine Learning', 'Recommendation System', 'Flask'],
     github: null,
     demo: null,
     category: 'Machine Learning',
-  },
-  {
-    title: 'Hotel Management System',
-    description:
-      'Full-fledged hotel management system for room booking, guest records, and payment processing. Integrated relational database for real-time access. Improved operational efficiency by 28% and increased customer satisfaction.',
-    image: '/projects/hotel.jpg',
-    technologies: ['Java', 'MySQL', 'JavaFX', 'Database Management'],
-    github: null,
-    demo: null,
-    category: 'Full Stack',
   },
 ];
 

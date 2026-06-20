@@ -100,10 +100,17 @@ const Home = () => {
               aria-live="polite"
             >
               <TypeAnimation
-                sequence={['AI/ML Researcher • Computer Vision • Model Builder', 1200]}
+                sequence={[
+                  'Associate Software Engineer @ Accenture',
+                  1200,
+                  'AI/ML Researcher • Computer Vision',
+                  1200,
+                  '7 Publications • 2 Patents',
+                  1200,
+                ]}
                 speed={50}
                 cursor={true}
-                repeat={0}
+                repeat={Infinity}
                 wrapper="span"
               />
             </motion.p>
@@ -112,10 +119,10 @@ const Home = () => {
               variants={itemVariants}
               className="mx-auto mb-10 max-w-2xl px-4 text-sm leading-relaxed text-muted-foreground sm:px-0 sm:text-base md:mb-12 md:text-lg"
             >
-              I design and ship deep learning systems that turn noisy visuals into decisions. My
-              recent work spans CNNs for gesture understanding, plant health, and medical
-              imaging—with 3 peer-reviewed conference papers. I enjoy clean implementations,
-              thoughtful UX, and results you can measure.
+              Associate Software Engineer at Accenture with an M.Tech in CS&E from Medicaps
+              University (CGPA 8.71). My research spans CNNs, computer vision, and ML—with 6
+              peer-reviewed publications and 2 granted Indian patents. I enjoy clean
+              implementations, thoughtful UX, and results you can measure.
             </motion.p>
 
             <motion.div
@@ -159,7 +166,7 @@ const Home = () => {
                 <Linkedin className="h-5 w-5 transition-colors group-hover:text-primary-foreground sm:h-6 sm:w-6" />
               </a>
               <a
-                href="mailto:vivek.jindal.sbg@gmail.com"
+                href="mailto:vivek.jindal24@outlook.com"
                 className="group rounded-full bg-secondary p-2.5 transition-all hover:scale-110 hover:bg-primary sm:p-3"
                 aria-label="Email Contact"
               >
@@ -190,9 +197,9 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8 md:grid-cols-3">
             {[
-              { label: 'Conference Publications', value: '3' },
+              { label: 'Research Publications', value: '7' },
               { label: 'M.Tech CGPA', value: '8.71' },
-              { label: 'Research Projects', value: '5+' },
+              { label: 'Patents Granted', value: '2' },
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}

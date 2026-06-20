@@ -1,12 +1,12 @@
 export const siteConfig = {
   name: 'Vivek Jindal',
-  title: 'M.Tech (2025) Graduate | Deep Learning & Computer Vision Researcher',
+  title: 'Associate Software Engineer at Accenture | AI/ML Researcher',
   description:
-    'M.Tech (2025) in Computer Science & Engineering (Cloud Computing) from Medicaps University. Specialized in deep learning, computer vision, and neural networks with 3 conference publications.',
-  url: 'https://vivekjindal.dev',
+    'Associate Software Engineer at Accenture. M.Tech (2025) in Computer Science & Engineering from Medicaps University. Specialized in deep learning, computer vision, and neural networks with 7 research publications and 2 patents.',
+  url: 'https://www.vivekjindal.in',
   ogImage: '/og-image.jpg',
   links: {
-    email: 'vivek.jindal.sbg@gmail.com',
+    email: 'vivek.jindal24@outlook.com',
     github: 'https://github.com/vivekjindal',
     linkedin: 'https://www.linkedin.com/in/24vivek-jindal',
     whatsapp: '+919755872328',

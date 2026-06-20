@@ -4,18 +4,32 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 
 const experiences = [
   {
+    title: 'Associate Software Engineer',
+    company: 'Accenture',
+    location: 'Gurugram, India',
+    period: 'March 2026 - Present',
+    description:
+      'Working as an Associate Software Engineer at Accenture, contributing to software development and delivery.',
+    achievements: [
+      'Oracle Fusion AI Agent Studio Certified Foundations Associate (Dec 2025)',
+      'Oracle APEX Cloud Developer Certified Professional (Sep 2025)',
+      'Completed Delivery Practice School training (Aug 2025)',
+      'Applying AI/ML expertise and cloud skills in enterprise delivery projects',
+    ],
+  },
+  {
     title: 'Teaching Assistant',
     company: 'Medicaps University',
     location: 'Indore, India',
-    period: 'August 2022 - Present',
+    period: 'October 2022 - November 2025',
     description:
-      'Supporting the Computer Science & Engineering department during my M.Tech program (completed June 2025). Assisting in coursework, research activities, and student mentorship.',
+      'Supported the Computer Science & Engineering department throughout the M.Tech program.',
     achievements: [
-      'Published 3 conference papers in 2025 at prestigious international conferences',
-      'Developed cricket scorecard automation system achieving 98% accuracy',
-      'Led research on disease detection in plants using CNN with 96.1% accuracy',
-      'Contributed to skin cancer detection research using ResNet-152 architecture',
-      'Graduated with CGPA of 8.71/10 in M.Tech program',
+      'Conducted lab sessions for B.Tech CSE students in Data Structures, Algorithms, and Database Systems',
+      'Assisted in preparing and evaluating lab work and course material design',
+      'Contributed to faculty research through documentation, literature review, and technical support',
+      'Managed departmental social media handles, increasing engagement by 30% through targeted academic content',
+      'Published 6 research papers at international conferences and journals (2025-2026)',
     ],
   },
 ];
@@ -42,9 +56,9 @@ const education = [
   {
     degree: 'Bachelor of Technology - Computer Science & Engineering',
     specialization: 'Core',
-    institution: 'Rajiv Gandhi Proudyogiki Vishwavidyalaya',
-    location: 'Bhopal, India',
-    period: 'August 2018 - May 2022',
+    institution: 'Sushila Devi Bansal College of Technology (Aff. RGPV)',
+    location: 'Indore, India',
+    period: 'August 2018 - June 2022',
     grade: 'CGPA: 6.93/10',
     achievements: [
       'Thesis: "Hotel Management System"',

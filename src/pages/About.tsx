@@ -100,9 +100,9 @@ const About = () => {
                   <div>
                     <h3 className="text-sm font-semibold sm:text-base">Research</h3>
                     <p className="text-xs text-muted-foreground sm:text-sm">
-                      3 Conference Publications (2025)
+                      7 Publications (2025-2026) + 2 Patents
                       <br />
-                      IET & International Conferences
+                      IEEE, IET, GRENZE & International Conferences
                     </p>
                   </div>
                 </div>
@@ -114,9 +114,10 @@ const About = () => {
                   <div>
                     <h3 className="text-sm font-semibold sm:text-base">Experience</h3>
                     <p className="text-xs text-muted-foreground sm:text-sm">
-                      Teaching Assistant
-                      <br />
-                      Medicaps University (2022 - Present)
+                      Associate Software Engineer<br />
+                      Accenture (Mar 2026 - Present)<br />
+                      Teaching Assistant<br />
+                      Medicaps University (2022 - 2025)
                     </p>
                   </div>
                 </div>

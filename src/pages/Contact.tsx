@@ -127,10 +127,10 @@ const Contact = () => {
                   <div>
                     <h3 className="text-sm font-semibold sm:text-base">Email</h3>
                     <a
-                      href="mailto:vivek.jindal.sbg@gmail.com"
+                      href="mailto:vivek.jindal24@outlook.com"
                       className="break-all text-xs text-muted-foreground transition-colors hover:text-primary sm:text-sm"
                     >
-                      vivek.jindal.sbg@gmail.com
+                      vivek.jindal24@outlook.com
                     </a>
                   </div>
                 </div>
@@ -141,7 +141,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-sm font-semibold sm:text-base">Location</h3>
-                    <p className="text-xs text-muted-foreground sm:text-sm">Indore, India</p>
+                    <p className="text-xs text-muted-foreground sm:text-sm">Gurugram, India</p>
                   </div>
                 </div>
               </CardContent>
