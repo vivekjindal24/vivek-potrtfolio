@@ -6,7 +6,7 @@ const routes = [
   { path: '/about', mustContain: 'About', selector: 'h1' },
   { path: '/experience', mustContain: 'Teaching Assistant', selector: 'body' },
   { path: '/projects', mustContain: 'Featured', selector: 'h1' },
-  { path: '/publications', mustContain: 'Conference Publications', selector: 'h2' },
+  { path: '/publications', mustContain: 'Research Publications', selector: 'h2' },
   { path: '/contact', mustContain: 'Send a Message', selector: 'text=Send a Message' },
 ];
 
@@ -26,7 +26,7 @@ for (const { path, mustContain, selector } of routes) {
 test('home stats and resume link exist', async ({ page, baseURL }) => {
   await page.goto(baseURL! + '/');
   await expect(page.locator('text=M.Tech CGPA')).toBeVisible();
-  await expect(page.locator('text=8.71')).toBeVisible();
+  await expect(page.locator('.text-gradient', { hasText: '8.71' })).toBeVisible();
   const resume = page.locator('a', { hasText: 'Download Resume' });
   await expect(resume).toHaveAttribute('href', '/resume.pdf');
 });
@@ -48,7 +48,7 @@ test('experience page CGPAs are correct', async ({ page, baseURL }) => {
 // Publications have at least 3 cards
 test('publications show three conference items', async ({ page, baseURL }) => {
   await page.goto(baseURL! + '/publications');
-  await expect(page.locator('text=Conference Publications')).toBeVisible();
+  await expect(page.locator('h2:has-text("Research Publications")')).toBeVisible();
   // Fallback: ensure at least one publication title shows up
   const titles = page
     .locator('text=Automating Cricket Scorecards')
