@@ -78,10 +78,10 @@ const Experience = () => {
           animate={{ opacity: 1, y: 0 }}
           className="mb-16 text-center"
         >
-          <h1 className="mb-4 text-5xl font-bold">
+          <h1 className="mb-4 text-3xl font-bold sm:text-4xl md:text-5xl">
             Experience & <span className="text-gradient">Education</span>
           </h1>
-          <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
+          <p className="mx-auto max-w-2xl text-sm text-muted-foreground sm:text-base md:text-lg">
             My professional journey and academic background
           </p>
         </motion.div>

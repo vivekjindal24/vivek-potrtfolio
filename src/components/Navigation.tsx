@@ -119,23 +119,53 @@ const Navigation = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Full-Screen Overlay */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="glass dark:glass-dark md:hidden"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="fixed inset-0 z-50 flex flex-col bg-background/95 backdrop-blur-xl md:hidden"
           >
-            <div className="container mx-auto px-4 py-4">
+            {/* Top bar */}
+            <div className="flex h-16 items-center justify-between px-4">
+              <Link to="/" className="text-2xl font-bold text-gradient">
+                VJ
+              </Link>
+              <div className="flex items-center gap-4">
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={toggleTheme}
+                  className="rounded-full"
+                >
+                  {theme === 'dark' ? (
+                    <Sun className="h-5 w-5" />
+                  ) : (
+                    <Moon className="h-5 w-5" />
+                  )}
+                </Button>
+                <button
+                  onClick={() => setIsOpen(false)}
+                  aria-label="Close menu"
+                >
+                  <X size={24} />
+                </button>
+              </div>
+            </div>
+
+            {/* Nav items */}
+            <div className="flex flex-1 flex-col items-center justify-center gap-8 px-4">
               {navItems.map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`block py-3 transition-colors ${
+                  onClick={() => setIsOpen(false)}
+                  className={`text-2xl font-semibold transition-colors hover:text-primary ${
                     location.pathname === item.path
-                      ? 'text-primary font-semibold'
+                      ? 'text-primary'
                       : 'text-foreground/80'
                   }`}
                 >

@@ -36,7 +36,7 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
+      <section className="relative flex min-h-screen items-center justify-center overflow-x-hidden pt-16">
         {/* Animated Background */}
         <div className="absolute inset-0 -z-10">
           <div className="absolute inset-0 animate-gradient bg-gradient-to-br from-primary/20 via-purple-500/20 to-pink-500/20 bg-[length:400%_400%]" />
